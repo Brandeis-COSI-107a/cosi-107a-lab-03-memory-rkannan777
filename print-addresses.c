@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 
 	for (int i = 1; i < argc; i++) {
 		uint64_t num = (uint64_t)strtoull(argv[i], NULL, 10);
-		printf("0x%012" PRIX64 " \n", num & 0xFFFFFFFFFFFF);
+		printf("0x%012" PRIX64 "\n", num & 0xFFFFFFFFFFFF);
 	}
 
 	return 0;
