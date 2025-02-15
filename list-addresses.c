@@ -4,7 +4,7 @@ int uninitialized_var;
 
 void another_function() {}
 
-int main()
+int main() {
 	int stack_var = 42;
 	const char* str = "Hello, world!";
 
