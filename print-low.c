@@ -8,7 +8,8 @@ int main(int argc, char *argv[]) {
 	}
 
 	for (int i = 1; i < argc; i++) {
-		int num = strtol(argv[i], NULL, 10);
+		char *endptr;
+		int num = strtol(argv[i], &endptr, 0);
 		int low_bits = num & 0xFF;
 		printf("%d 0x%02X %3d\n", i, low_bits, low_bits);
 	}
